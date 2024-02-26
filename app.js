@@ -45,8 +45,7 @@ document.addEventListener("scroll", function () {
 
   if (Yoff >= YOFF_MAX_TRANS_LIMIT * 0.8) {
     secondPage.style.opacity = 1;
-    secondPage.style.top = `${firstPageBottom + 158}px`; /* 
-    firstPage.style.display = "none"; */
+    secondPage.style.top = `${firstPageBottom + 158}px`; 
 
     spans[0].style.transform = "translate3d(1rem , 0 , 0)";
     spans[1].style.opacity = 0;
@@ -56,7 +55,5 @@ document.addEventListener("scroll", function () {
   if (Yoff >= YOFF_MAX_TRANS_LIMIT * 4)
     console.log(secondPageBottom + firstPageBottom);
   thirdPage.style.opacity = 1;
-  thirdPage.style.top = `${secondPageBottom + firstPageBottom - 330}px`; /* 
-    firstPage.style.display = "none";
-    secondPage.style.display = "none"; */
+  thirdPage.style.top = `${secondPageBottom + firstPageBottom - 330}px`; 
 });
